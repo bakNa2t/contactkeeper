@@ -65,7 +65,7 @@ const CreateContact = (props) => {
             onChange={nameChangeHandler}
             value={inputName}
           />
-          <label htmlFor="phone">Phone Number:</label>
+          <label htmlFor="phone">Phone Number (10 digits):</label>
           <input
             id="phone"
             type="number"

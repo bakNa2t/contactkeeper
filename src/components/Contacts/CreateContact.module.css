@@ -1,0 +1,49 @@
+.input {
+  margin: 2rem auto;
+  padding: 2rem;
+  width: 100%;
+  max-width: 25rem;
+}
+
+.input input[type="number"]::-webkit-outer-spin-button,
+.input input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.input label {
+  font-family: "Fira Sans", sans-serif;
+  display: block;
+  color: #306030;
+  font-weight: bold;
+  padding-left: 1rem;
+  margin-bottom: 0.4rem;
+  text-transform: uppercase;
+  text-shadow: 0 0 2px #88d8c0;
+}
+
+.input input {
+  font-weight: bolder;
+  font: inherit;
+  display: block;
+  width: 100%;
+  border: 1px solid #00cc99;
+  border-radius: 4px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  background-color: #8fbc8f;
+  transition: all 0.4s;
+}
+
+.input input::placeholder {
+  opacity: 0.7;
+  font-style: italic;
+  font-size: smaller;
+}
+
+.input input:focus {
+  outline: none;
+  border-color: #99e6b3;
+  background-color: #98ff98;
+  box-shadow: 0 0 7px 2px #88d8c085;
+  transition: all 0.4s;
+}

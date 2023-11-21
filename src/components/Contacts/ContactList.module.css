@@ -1,0 +1,38 @@
+.persons {
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 35rem;
+}
+
+.persons ul {
+  list-style: none;
+  padding: 1.5rem 0;
+}
+
+.persons li {
+  border: 1px solid #306030;
+  border-radius: 5px;
+  margin: 0.5rem 2rem;
+  padding: 0.5rem 1rem;
+  background-color: #7bb661;
+  box-shadow: 0 0 3px 2px #30603080;
+}
+
+.persons li p {
+  font-style: italic;
+}
+
+.persons li p span {
+  padding: 0 0.5rem;
+  font-weight: bolder;
+  font-style: normal;
+}
+
+@media (max-width: 768px) {
+  .persons {
+    width: 100%;
+  }
+  .persons li {
+    padding: 0.5rem 0.5rem;
+  }
+}

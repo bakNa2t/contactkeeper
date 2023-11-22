@@ -11,7 +11,14 @@ const ContactList = (props) => {
               Contact name: <span>{contact.name.toUpperCase()}</span>
             </p>
             <p>
-              Contact phone number: <span>{contact.phoneNumber}</span>
+              Contact phone number:
+              <span>
+                {"+7 "}
+                {contact.phoneNumber.replace(
+                  /\(?([0-9]{0,3})\)?[-. ]?([0-9]{0,3})?[-. ]?([0-9]{0,4})/s,
+                  "($1) $2-$3"
+                )}
+              </span>
             </p>
           </li>
         ))}

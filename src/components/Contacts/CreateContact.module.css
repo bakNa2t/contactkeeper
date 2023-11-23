@@ -5,20 +5,27 @@
   max-width: 25rem;
 }
 
+/* Chrome, Safari, Edge, Opera */
 .input input[type="number"]::-webkit-outer-spin-button,
 .input input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
+/* Firefox */
+.input input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 .input label {
   font-family: "IBM Plex Sans", sans-serif;
-  display: block;
-  color: #306030;
   font-weight: 700;
+  font-size: 0.9rem;
+  display: block;
+  color: #003153;
   padding-left: 1rem;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.2rem;
   text-transform: uppercase;
-  text-shadow: 0 0 2px #e0ffff;
+  text-shadow: 0 0 1px #e0ffff;
 }
 
 .input input {
@@ -27,7 +34,7 @@
   display: block;
   width: 100%;
   border: 1px solid #00cc99;
-  border-radius: 4px;
+  border-radius: 15px;
   padding: 0.5rem;
   margin-bottom: 1rem;
   background-color: #8fbc8f;

@@ -9,18 +9,18 @@
   color: #003153;
   text-shadow: 2px 2px 0 rgba(224, 255, 255, 0.6);
 }
-.persons {
+.contacts {
   margin: 2rem auto;
   width: 100%;
   max-width: 35rem;
 }
 
-.persons ul {
+.contacts ul {
   list-style: none;
   padding: 1rem 0 1.5rem;
 }
 
-.persons li {
+.contacts li {
   font-family: "IBM Plex Sans", sans-serif;
   border: 2px solid #40826d;
   border-radius: 20px;
@@ -30,11 +30,11 @@
   box-shadow: 0 0 5px 1px rgba(224, 255, 255, 0.4);
 }
 
-.persons li p {
+.contacts li p {
   font-style: italic;
 }
 
-.persons li p span {
+.contacts li p span {
   color: #003153;
   padding: 0 0.5rem;
   font-weight: bold;
@@ -43,10 +43,10 @@
 }
 
 @media (max-width: 576px) {
-  .persons {
+  .contacts {
     max-width: 25rem;
   }
-  .persons li {
+  .contacts li {
     margin: 0.5rem 1rem;
   }
 }

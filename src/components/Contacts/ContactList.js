@@ -4,6 +4,7 @@ import styles from "./ContactList.module.css";
 const ContactList = (props) => {
   return (
     <Card className={styles.persons}>
+      <div className={styles.header}>Contacts</div>
       <ul>
         {props.contacts.map((contact) => (
           <li key={contact.id}>

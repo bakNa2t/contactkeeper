@@ -8,7 +8,7 @@ const ContactList = (props) => {
         {props.contacts.map((contact) => (
           <li key={contact.id}>
             <p>
-              Contact name:{" "}
+              Name:{" "}
               <span>
                 {contact.name
                   .split(" ")
@@ -17,7 +17,7 @@ const ContactList = (props) => {
               </span>
             </p>
             <p>
-              Contact phone number:
+              Phone number:
               <span>
                 {"+7 "}
                 {contact.phoneNumber.replace(

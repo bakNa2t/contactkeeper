@@ -1,7 +1,8 @@
 .button {
   width: 100%;
-  font: inherit;
-  font-weight: bolder;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
   margin-top: 1rem;
   padding: 0.5rem 1.5rem;
   color: #8fbc8f;

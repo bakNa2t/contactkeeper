@@ -11,14 +11,14 @@
 }
 
 .input label {
-  font-family: "Fira Sans", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   display: block;
   color: #306030;
-  font-weight: bold;
+  font-weight: 700;
   padding-left: 1rem;
   margin-bottom: 0.4rem;
   text-transform: uppercase;
-  text-shadow: 0 0 2px #88d8c0;
+  text-shadow: 0 0 2px #e0ffff;
 }
 
 .input input {
@@ -46,4 +46,11 @@
   background-color: #98ff98;
   box-shadow: 0 0 7px 2px #88d8c085;
   transition: all 0.4s;
+}
+
+@media (max-width: 576px) {
+  .input {
+    margin: auto;
+    padding: 2rem 1rem;
+  }
 }

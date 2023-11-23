@@ -1,6 +1,6 @@
 .persons {
   margin: 2rem auto;
-  width: 90%;
+  width: 100%;
   max-width: 35rem;
 }
 
@@ -10,6 +10,7 @@
 }
 
 .persons li {
+  font-family: "IBM Plex Sans", sans-serif;
   border: 1px solid #306030;
   border-radius: 5px;
   margin: 0.5rem 2rem;
@@ -23,16 +24,17 @@
 }
 
 .persons li p span {
+  color: #003153;
   padding: 0 0.5rem;
-  font-weight: bolder;
+  font-weight: bold;
   font-style: normal;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .persons {
-    width: 100%;
+    max-width: 25rem;
   }
   .persons li {
-    padding: 0.5rem 0.5rem;
+    margin: 0.5rem 1rem;
   }
 }

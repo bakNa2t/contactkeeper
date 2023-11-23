@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import CreateContact from "./components/Contacts/CreateContact";
 import ContactList from "./components/Contacts/ContactList";
+import Header from "./components/UI/Header";
 import "./App.css";
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
 
   return (
     <React.Fragment>
+      <Header />
       <CreateContact onCreateContact={createContactHandler} />
       {contactList.length !== 0 && <ContactList contacts={contactList} />}
     </React.Fragment>

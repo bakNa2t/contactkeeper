@@ -6,13 +6,14 @@ import "./App.css";
 
 const App = () => {
   const [contactList, setContactList] = useState([]);
-  const createContactHandler = (name, phoneNumber) => {
+  const createContactHandler = (name, phoneNumber, email) => {
     setContactList((prevContactList) => {
       return [
         ...prevContactList,
         {
           name: name,
           phoneNumber: phoneNumber,
+          email: email,
           id: Math.random().toFixed(5).toString(),
         },
       ];

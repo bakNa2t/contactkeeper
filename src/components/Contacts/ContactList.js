@@ -31,6 +31,11 @@ const ContactList = (props) => {
                 )}
               </span>
             </p>
+            {contact.email.length !== 0 && (
+              <p>
+                Email: <span>{contact.email}</span>
+              </p>
+            )}
           </li>
         ))}
       </ul>

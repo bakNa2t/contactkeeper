@@ -7,6 +7,7 @@ import styles from "./CreateContact.module.css";
 const CreateContact = (props) => {
   const [inputName, setInputName] = useState("");
   const [inputPhoneNumber, setInputPhoneNumber] = useState("");
+  const [inputEmail, setInputEmail] = useState("");
   const [error, setError] = useState();
 
   const createContactHandler = (e) => {
@@ -16,7 +17,7 @@ const CreateContact = (props) => {
       setError({
         title: "Invalid input",
         message:
-          "Please enter a valid name and phone number. This fields cannot be empty.",
+          "Please enter a valid name, phone number and email. This fields cannot be empty.",
       });
       return;
     }
@@ -29,9 +30,10 @@ const CreateContact = (props) => {
       return;
     }
 
-    props.onCreateContact(inputName, inputPhoneNumber);
+    props.onCreateContact(inputName, inputPhoneNumber, inputEmail);
     setInputName("");
     setInputPhoneNumber("");
+    setInputEmail("");
   };
 
   const nameChangeHandler = (e) => {
@@ -42,6 +44,10 @@ const CreateContact = (props) => {
     setInputPhoneNumber(
       e.target.value.replace(/(\d{4})(\d{3})(\d{4})/, "($1) $2-$3")
     );
+  };
+
+  const emailChangeHandler = (e) => {
+    setInputEmail(e.target.value);
   };
 
   const errorHandler = () => {
@@ -74,6 +80,14 @@ const CreateContact = (props) => {
             placeholder="Enter phone number..."
             onChange={phoneNumberChangeHandler}
             value={inputPhoneNumber}
+          />
+          <label htmlFor="email">Email (optional):</label>
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter email..."
+            onChange={emailChangeHandler}
+            value={inputEmail}
           />
           <Button type="submit">Add Contact</Button>
         </form>

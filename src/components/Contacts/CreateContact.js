@@ -42,7 +42,8 @@ const CreateContact = (props) => {
 
   const phoneNumberChangeHandler = (e) => {
     setInputPhoneNumber(
-      e.target.value.replace(/(\d{4})(\d{3})(\d{4})/, "($1) $2-$3")
+      e.target.value
+      // .replace(/(\d{4})(\d{3})(\d{4})/, "($1) $2-$3")
     );
   };
 
@@ -76,7 +77,7 @@ const CreateContact = (props) => {
           <label htmlFor="phone">Phone Number (10 digits):</label>
           <input
             id="phone"
-            type="number"
+            type="tel"
             placeholder="Enter phone number..."
             onChange={phoneNumberChangeHandler}
             value={inputPhoneNumber}

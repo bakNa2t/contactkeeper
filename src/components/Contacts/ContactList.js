@@ -1,10 +1,14 @@
 import Card from "../UI/Card";
+import logoKeeper from "../../assets/images/logo_keeper_512.png";
 import styles from "./ContactList.module.css";
 
 const ContactList = (props) => {
   return (
     <Card className={styles.contacts}>
-      <div className={styles.header}>Contacts</div>
+      <div className={styles.header}>
+        <img src={logoKeeper} alt="logo" />
+        Contacts
+      </div>
       <ul>
         {props.contacts.map((contact) => (
           <li key={contact.id}>

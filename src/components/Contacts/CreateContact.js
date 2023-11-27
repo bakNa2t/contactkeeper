@@ -41,10 +41,7 @@ const CreateContact = (props) => {
   };
 
   const phoneNumberChangeHandler = (e) => {
-    setInputPhoneNumber(
-      e.target.value
-      // .replace(/(\d{4})(\d{3})(\d{4})/, "($1) $2-$3")
-    );
+    setInputPhoneNumber(e.target.value);
   };
 
   const emailChangeHandler = (e) => {

@@ -2,4 +2,4 @@
 
 #### Click image to open app
 
-[![Contact Keeper](/public/images/contactkeeper_baner.png)](https://contactkeeper-reactapp.vercel.app/)
+[![Contact Keeper](/public/images/readme_baner.png)](https://contactkeeper-reactapp.vercel.app/)

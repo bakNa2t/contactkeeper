@@ -78,6 +78,7 @@ const CreateContact = (props) => {
           <input
             id="phone"
             type="tel"
+            maxLength={10}
             placeholder="Enter phone number..."
             onChange={phoneNumberChangeHandler}
             value={inputPhoneNumber}

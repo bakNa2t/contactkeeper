@@ -14,17 +14,26 @@ const App = () => {
           name: name,
           phoneNumber: phoneNumber,
           email: email,
-          id: Math.random().toFixed(5).toString(),
+          id: new Date().getTime().toString(),
         },
       ];
     });
+  };
+
+  const clearAllContacts = () => {
+    setContactList([]);
   };
 
   return (
     <React.Fragment>
       <Header />
       <CreateContact onCreateContact={createContactHandler} />
-      {contactList.length !== 0 && <ContactList contacts={contactList} />}
+      {contactList.length !== 0 && (
+        <ContactList
+          contacts={contactList}
+          onClearAllContacts={clearAllContacts}
+        />
+      )}
     </React.Fragment>
   );
 };

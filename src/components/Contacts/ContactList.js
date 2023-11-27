@@ -1,6 +1,8 @@
 import Card from "../UI/Card";
+import { FaTrash } from "react-icons/fa";
 import logoKeeper from "../../assets/images/logo_keeper_512.png";
 import styles from "./ContactList.module.css";
+import Button from "../UI/Button";
 
 const ContactList = (props) => {
   return (
@@ -33,13 +35,22 @@ const ContactList = (props) => {
             </p>
             {contact.email.length !== 0 && (
               <p>
-                Email: <span>{contact.email}</span>
+                Email: <span>{contact.email.toLowerCase()}</span>
               </p>
             )}
-            <div className={styles.deleteBtn}>&#11198;</div>
+            <button type="button" className={styles["delete-btn"]}>
+              <FaTrash />
+            </button>
           </li>
         ))}
       </ul>
+      <Button
+        type="button"
+        className={styles["clear-btn"]}
+        onClick={props.onClearAllContacts}
+      >
+        Clear all contact
+      </Button>
     </Card>
   );
 };

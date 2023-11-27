@@ -36,6 +36,7 @@ const ContactList = (props) => {
                 Email: <span>{contact.email}</span>
               </p>
             )}
+            <div className={styles.deleteBtn}>&#11198;</div>
           </li>
         ))}
       </ul>

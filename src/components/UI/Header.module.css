@@ -9,10 +9,25 @@
 }
 
 .header h1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   font-family: "Jura", sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   color: #317873;
   text-shadow: 2px 2px 0px rgba(224, 255, 255, 0.6);
+}
+
+.header h1 svg {
+  width: 1.3em;
+  height: 1.3em;
+  margin: 0 auto;
+}
+
+@media (max-width: 576px) {
+  .header h1 {
+    padding: 0.5rem 0.5rem;
+  }
 }

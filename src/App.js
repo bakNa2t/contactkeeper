@@ -21,7 +21,9 @@ const App = () => {
   };
 
   const clearAllContacts = () => {
-    setContactList([]);
+    if (window.confirm("Are you sure you want to clear all contacts?")) {
+      setContactList([]);
+    }
   };
 
   return (

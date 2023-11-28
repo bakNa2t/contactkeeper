@@ -17,7 +17,7 @@ const CreateContact = (props) => {
       setError({
         title: "Invalid input",
         message:
-          "Please enter a valid name, phone number and email. This fields cannot be empty.",
+          "Please enter a valid name and phone number. This fields cannot be empty.",
       });
       return;
     }

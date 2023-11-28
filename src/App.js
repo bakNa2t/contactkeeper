@@ -1,11 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import CreateContact from "./components/Contacts/CreateContact";
 import ContactList from "./components/Contacts/ContactList";
 import Header from "./components/UI/Header";
 import "./App.css";
 
+// get contacts from local storage
+const getContactsFromLocalStorage = () => {
+  let contact = localStorage.getItem("contact");
+  if (contact) {
+    return JSON.parse(localStorage.getItem("contact"));
+  } else {
+    return [];
+  }
+};
+
 const App = () => {
-  const [contactList, setContactList] = useState([]);
+  const [contactList, setContactList] = useState(getContactsFromLocalStorage());
   const createContactHandler = (name, phoneNumber, email) => {
     setContactList((prevContactList) => {
       return [
@@ -33,6 +43,13 @@ const App = () => {
       setContactList([]);
     }
   };
+
+  //filter contacts
+
+  //add contacts to local storage
+  useEffect(() => {
+    localStorage.setItem("contact", JSON.stringify(contactList));
+  }, [contactList]);
 
   return (
     <React.Fragment>

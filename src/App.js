@@ -20,6 +20,14 @@ const App = () => {
     });
   };
 
+  //delete certain contact
+  const removeContact = (id) => {
+    if (window.confirm("Are you sure you want to delete this contact?")) {
+      setContactList(contactList.filter((contact) => contact.id !== id));
+    }
+  };
+
+  //delete all contacts
   const clearAllContacts = () => {
     if (window.confirm("Are you sure you want to clear all contacts?")) {
       setContactList([]);
@@ -33,6 +41,7 @@ const App = () => {
       {contactList.length !== 0 && (
         <ContactList
           contacts={contactList}
+          onRemoveContact={removeContact}
           onClearAllContacts={clearAllContacts}
         />
       )}

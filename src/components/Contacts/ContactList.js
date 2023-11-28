@@ -38,7 +38,11 @@ const ContactList = (props) => {
                 Email: <span>{contact.email.toLowerCase()}</span>
               </p>
             )}
-            <button type="button" className={styles["delete-btn"]}>
+            <button
+              type="button"
+              className={styles["delete-btn"]}
+              onClick={props.onRemoveContact.bind(null, contact.id)}
+            >
               <FaTrash />
             </button>
           </li>

@@ -74,8 +74,10 @@ const CreateContact = (props) => {
           <label htmlFor="phone">Phone Number (10 digits):</label>
           <input
             id="phone"
-            type="number"
-            placeholder="Enter phone number..."
+            type="tel"
+            pattern="[0-9]{10}"
+            maxLength="10"
+            placeholder="E.g. 8001001010"
             onChange={phoneNumberChangeHandler}
             value={inputPhoneNumber}
           />

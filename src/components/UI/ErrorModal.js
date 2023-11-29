@@ -18,7 +18,9 @@ const Modal = (props) => {
         <p>{props.message}</p>
       </div>
       <footer className={styles.actions}>
-        <Button onClick={props.onCloseModal}>Close</Button>
+        <Button onClick={props.onCloseModal} className={styles["modal-btn"]}>
+          Close
+        </Button>
       </footer>
     </Card>
   );

@@ -18,16 +18,16 @@
 }
 
 .header {
-  background: #cc333370;
+  background: rgba(255, 153, 153, 0.9);
   padding: 1rem;
 }
 
 .header h2 {
   margin: 0;
   font-size: 2rem;
-  color: #ff0028;
+  color: #cf1020;
   text-align: center;
-  text-shadow: 0 0 2px #ffffff50;
+  text-shadow: 0 0 1px #ffffff;
 }
 
 .content {

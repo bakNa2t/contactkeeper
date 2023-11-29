@@ -24,7 +24,7 @@ const CreateContact = (props) => {
 
     if (+inputPhoneNumber.length !== 10) {
       setError({
-        title: "Invalid phone number",
+        title: "Invalid phone number input",
         message: "Please enter a valid phone number (10 digits).",
       });
       return;
@@ -74,8 +74,7 @@ const CreateContact = (props) => {
           <label htmlFor="phone">Phone Number (10 digits):</label>
           <input
             id="phone"
-            type="tel"
-            maxLength={10}
+            type="number"
             placeholder="Enter phone number..."
             onChange={phoneNumberChangeHandler}
             value={inputPhoneNumber}

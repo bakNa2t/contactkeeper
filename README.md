@@ -5,7 +5,7 @@
 <div align="center">
     <p style="width: 500px;">
         <a href="https://bakna2t.github.io/contactkeeper/">
-            <img alt="Keycode Webapp" src ="./public/images/README_baner.png">
+            <img alt="Keycode Webapp" src ="./public/images/readme_baner.png">
         </a>
     </p>
 </div>

@@ -1,5 +1,5 @@
 import Card from "../UI/Card";
-import { FaTrash } from "react-icons/fa";
+import { FaTrash, FaPencilAlt } from "react-icons/fa";
 import logoKeeper from "../../assets/images/logo_keeper_512.png";
 import styles from "./ContactList.module.css";
 import Button from "../UI/Button";
@@ -38,6 +38,13 @@ const ContactList = (props) => {
                 Email: <span>{contact.email.toLowerCase()}</span>
               </p>
             )}
+            <button
+              type="button"
+              className={styles["edit-btn"]}
+              // onClick={props.onEditContact}
+            >
+              <FaPencilAlt />
+            </button>
             <button
               type="button"
               className={styles["delete-btn"]}

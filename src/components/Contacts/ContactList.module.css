@@ -65,7 +65,7 @@
 
 .delete-btn {
   position: absolute;
-  top: 10%;
+  bottom: 10%;
   right: 3%;
   color: #40826d;
   cursor: pointer;
@@ -74,7 +74,19 @@
   border: none;
 }
 
-.delete-btn:hover {
+.edit-btn {
+  position: absolute;
+  top: 10%;
+  right: 3%;
+  cursor: pointer;
+  color: #40826d;
+  transition: transform 0.4s;
+  background-color: transparent;
+  border: none;
+}
+
+.delete-btn:hover,
+.edit-btn:hover {
   color: #003153;
   transform: scale(1.3);
   transition: transform 0.4s;

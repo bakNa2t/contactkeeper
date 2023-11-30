@@ -5,9 +5,7 @@
 <div align="center">
     <p style="width: 500px;">
         <a href="https://bakna2t.github.io/contactkeeper/">
-            <img alt="Keycode Webapp" src ="./README_baner.png">
+            <img alt="Keycode Webapp" src ="./public/images/README_baner.png">
         </a>
     </p>
 </div>
-
-<!-- [![Contact Keeper](/README_baner.png)](https://contactkeeper-reactapp.vercel.app/) -->

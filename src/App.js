@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import CreateContact from "./components/Contacts/CreateContact";
 import ContactList from "./components/Contacts/ContactList";
 import Header from "./components/UI/Header";
+import Card from "./components/UI/Card";
 import "./App.css";
 
 // get contacts from local storage
@@ -55,6 +56,11 @@ const App = () => {
     <React.Fragment>
       <Header />
       <CreateContact onCreateContact={createContactHandler} />
+      {contactList.length === 0 && (
+        <Card>
+          <h2>No found any keeped contacts yet</h2>
+        </Card>
+      )}
       {contactList.length !== 0 && (
         <ContactList
           contacts={contactList}

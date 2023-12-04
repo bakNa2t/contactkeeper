@@ -22,7 +22,7 @@ const CreateContact = (props) => {
       return;
     }
 
-    if (+inputPhoneNumber.length !== 10) {
+    if (+inputPhoneNumber.length < 9) {
       setError({
         title: "Invalid phone number input",
         message: "Please enter a valid phone number (10 digits).",

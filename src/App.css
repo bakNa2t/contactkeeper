@@ -39,4 +39,7 @@ body {
   #root {
     margin: 2rem 1rem;
   }
+  .empty-block h2 {
+    font-size: 1.2rem;
+  }
 }

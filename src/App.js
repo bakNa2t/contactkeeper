@@ -57,7 +57,7 @@ const App = () => {
       <Header />
       <CreateContact onCreateContact={createContactHandler} />
       {contactList.length === 0 && (
-        <Card>
+        <Card className="empty-block">
           <h2>No found any keeped contacts yet</h2>
         </Card>
       )}

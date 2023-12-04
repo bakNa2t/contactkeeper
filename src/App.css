@@ -19,6 +19,22 @@ body {
   background-size: cover;
 }
 
+.empty-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 35rem;
+}
+
+.empty-block h2 {
+  font-size: 1.5rem;
+  padding: 3rem 1rem;
+  color: #7bb661;
+  text-shadow: 0 0 3px rgba(32, 32, 32, 0.9);
+}
+
 @media screen and (max-width: 768px) {
   #root {
     margin: 2rem 1rem;

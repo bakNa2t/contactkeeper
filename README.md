@@ -2,15 +2,25 @@
 
 #### To start the app you need next:
 
-Clone repository:
-`https://github.com/bakNa2t/contactkeeper`
+- Clone repository:
+
+```
+    https://github.com/bakNa2t/contactkeeper
+```
+
 or download it from [here](https://github.com/bakNa2t/contactkeeper/archive/master.zip) zip file
 
-Install dependencies in the project directory:
-`npm install`
+- Install dependencies in the project directory:
 
-Start the app on `localhost:3000`:
-`npm start`
+```
+    npm install
+```
+
+- Start the app on `localhost:3000`:
+
+```
+    npm start
+```
 
 #### Click image to open app
 
